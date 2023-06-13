@@ -18,6 +18,7 @@ body {
     font-weight: bold;
     margin-bottom: 30px;
     text-transform: uppercase;
+    animation: fadeIn 3s ease-in-out forwards; 
   }
   
   /* Paragraph styling */
@@ -26,6 +27,20 @@ body {
     line-height: 1.5;
     margin-bottom: 30px;
     color: #555;
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards; 
+  }
+  
+  /* Animation styling */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   /* Anchor styling */
@@ -50,6 +65,7 @@ body {
     height: auto;
     border-radius: 20%;
     margin: 24px auto;
+    animation: fadeIn 4s ease-in-out forwards; 
   }
   
   /* Blockquote styling */
@@ -64,4 +80,5 @@ body {
     border-radius: 20px;
     background-color: #f8f9fa;
     box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    animation: fadeIn 4s ease-in-out forwards;     
   }
